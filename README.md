@@ -55,26 +55,3 @@ You can install the required libraries using the following command:
 
 ```bash
 pip install tensorflow numpy matplotlib scikit-learn
-
-## Installation
-
-    Clone this repository to your local machine:
-
-bash
-
-git clone https://github.com/your-username/parking-lot-occupancy-detection.git
-
-    Navigate to the project directory:
-
-bash
-
-cd parking-lot-occupancy-detection
-
-    Install the required dependencies:
-
-bash
-
-pip install -r requirements.txt
-
-    Download and extract the PKLot dataset to the appropriate directory.
-
