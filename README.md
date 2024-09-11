@@ -2,7 +2,7 @@
 
 # Parking Lot Occupancy Detection Using CNN
 
-This project is a deep learning-based approach to detecting parking lot occupancy using images from the [PKLot dataset](https://web.inf.ufpr.br/vri/databases/pklot/). The model is implemented using TensorFlow and Keras, with a Convolutional Neural Network (CNN) architecture. The project includes preprocessing the dataset, training the CNN model, and evaluating its performance with metrics such as accuracy, loss, and confusion matrix.
+This project is a deep learning-based approach to detecting parking lot occupancy using images from the [PKLot dataset](https://web.inf.ufpr.br/vri/databases/parking-lot-database/). The model is implemented using TensorFlow and Keras, with a Convolutional Neural Network (CNN) architecture. The project includes preprocessing the dataset, training the CNN model, and evaluating its performance with metrics such as accuracy, loss, and confusion matrix.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
