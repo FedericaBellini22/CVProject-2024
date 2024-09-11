@@ -29,7 +29,7 @@ This work is inspired by and is a re-implementation of methods discussed in the 
 
 ## Dataset
 
-The dataset used for this project is the [PKLot dataset](https://web.inf.ufpr.br/vri/databases/pklot/), a public dataset containing images of parking lots captured under different weather conditions and angles. It has two classes:
+The dataset used for this project is the [PKLot dataset](https://web.inf.ufpr.br/vri/databases/parking-lot-database/), a public dataset containing images of parking lots captured under different weather conditions and angles. It has two classes:
 - **Empty**: Parking spaces without cars.
 - **Occupied**: Parking spaces with cars.
 
