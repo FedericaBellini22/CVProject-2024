@@ -169,7 +169,3 @@ The model performs extremely well, with an accuracy of 99.75% on the test datase
 - Copy the entire content of the above Markdown into your repository’s `README.md` file.
 - Customize the GitHub repository URL (`git clone https://github.com/your-username/parking-lot-occupancy-detection.git`) and paths as necessary.
 - Add the correct `requirements.txt` if applicable to your project.
-
-Let me know if you'd like further adjustments!
-
-
