@@ -144,8 +144,8 @@ After training, you can evaluate the model on the test set using:
 
 To visualize how well the model performed for each class (empty or occupied), you can plot a confusion matrix:
 
-![Senza titolo-1](![Immagine WhatsApp 2024-10-06 ore 22 55 44_802c38dc](https://github.com/user-attachments/assets/2bf9cf47-4ae8-4766-893e-1db95db2dff6)
-)
+![Immagine WhatsApp 2024-10-06 ore 22 55 44_802c38dc](https://github.com/user-attachments/assets/2bf9cf47-4ae8-4766-893e-1db95db2dff6)
+
 
 ## Literature Reference
 
