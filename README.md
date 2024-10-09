@@ -90,23 +90,20 @@ The model is a Convolutional Neural Network (CNN) with the following architectur
 
 ## Model Summary
 
-| Layer (type)                 | Output Shape         | Param #     |
-|------------------------------|----------------------|-------------|
-| conv2d (Conv2D)              | (None, 126, 126, 32) | 896         |
-| max_pooling2d (MaxPooling2D) | (None, 63, 63, 32)   | 0           |
-| conv2d_1 (Conv2D)            | (None, 61, 61, 64)   | 18,496      |
-| max_pooling2d_1 (MaxPooling2D)| (None, 30, 30, 64)  | 0           |
-| conv2d_2 (Conv2D)            | (None, 28, 28, 128)  | 73,856      |
-| max_pooling2d_2 (MaxPooling2D)| (None, 14, 14, 128) | 0           |
-| flatten (Flatten)            | (None, 25088)        | 0           |
-| dense (Dense)                | (None, 128)          | 3,211,392   |
-| dense_1 (Dense)              | (None, 1)            | 129         |
-| **Total params**             |                      | **3,304,769**|
-| **Trainable params**         |                      | **3,304,769**|
-| **Non-trainable params**     |                      | **0**       |
+| Layer (type)         | Output Shape        | Param #   |
+|----------------------|---------------------|-----------|
+| conv2d (Conv2D)      | (None, 126, 126, 32) | 896       |
+| max_pooling2d (MaxPooling2D) | (None, 63, 63, 32) | 0     |
+| conv2d_1 (Conv2D)    | (None, 61, 61, 64)   | 18,496    |
+| max_pooling2d_1 (MaxPooling2D) | (None, 30, 30, 64) | 0 |
+| conv2d_2 (Conv2D)    | (None, 28, 28, 64)   | 36,928    |
+| flatten (Flatten)   | (None, 50176)        | 0         |
+| dense (Dense)       | (None, 64)           | 3,211,328 |
+| dense_1 (Dense)     | (None, 1)            | 65        |
 
-Total parameters: **3,304,769**.
-
+**Total params:** 3,267,713 (12.47 MB)  
+**Trainable params:** 3,267,713 (12.47 MB)  
+**Non-trainable params:** 0 (0.00 B)
 ## Training the Model
 
 To train the model, open the Jupyter notebook and run all the cells:
