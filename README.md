@@ -81,12 +81,59 @@ pip install -r requirements.txt
 
 ## Model Architecture
 
-The model is a Convolutional Neural Network (CNN) with the following architecture:
-- **Input Layer**: Takes an input image of size 128x128x3 (RGB).
-- **3 Convolutional Layers**: Extract spatial features from the images using 32, 64, and 128 filters respectively.
-- **MaxPooling Layers**: Reduce the spatial dimensions of the feature maps.
-- **Fully Connected Layer**: A dense layer with 128 units.
-- **Output Layer**: A single neuron with a sigmoid activation function for binary classification (empty or occupied).
+
+# CNN Model Description
+
+## Architecture Overview
+This CNN (Convolutional Neural Network) model is designed for binary classification tasks, where the goal is to distinguish between two classes. The architecture consists of three convolutional layers followed by max-pooling, flattening, and dense layers. Here's a detailed breakdown of the layers and their roles:
+
+1. **Input Layer**: 
+   - Input shape: `(IMG_HEIGHT, IMG_WIDTH, 3)` representing the height, width, and 3 color channels (RGB) of the input images.
+
+2. **Convolutional Layer 1**:
+   - `Conv2D(32, (3, 3), activation='relu')`: Applies 32 filters of size 3x3 to the input image.
+   - **Activation**: ReLU (Rectified Linear Unit) introduces non-linearity, helping the model learn complex patterns.
+   - **Output shape**: `(None, 126, 126, 32)` - 32 feature maps.
+
+3. **Max Pooling Layer 1**:
+   - `MaxPooling2D((2, 2))`: Reduces the spatial dimensions by taking the maximum value over a 2x2 window.
+   - **Output shape**: `(None, 63, 63, 32)`.
+
+4. **Convolutional Layer 2**:
+   - `Conv2D(64, (3, 3), activation='relu')`: Uses 64 filters of size 3x3.
+   - **Output shape**: `(None, 61, 61, 64)`.
+
+5. **Max Pooling Layer 2**:
+   - `MaxPooling2D((2, 2))`: Further reduces spatial dimensions.
+   - **Output shape**: `(None, 30, 30, 64)`.
+
+6. **Convolutional Layer 3**:
+   - `Conv2D(64, (3, 3), activation='relu')`: Another layer with 64 filters of size 3x3.
+   - **Output shape**: `(None, 28, 28, 64)`.
+
+7. **Flatten Layer**:
+   - `Flatten()`: Flattens the 3D output of the last convolutional layer into a 1D vector.
+   - **Output shape**: `(None, 50176)` - a single vector that can be fed into the dense layers.
+
+8. **Dense Layer 1**:
+   - `Dense(64, activation='relu')`: Fully connected layer with 64 neurons.
+   - **Activation**: ReLU.
+   - Helps learn complex representations from the extracted features.
+   - **Output shape**: `(None, 64)`.
+
+9. **Output Layer**:
+   - `Dense(1, activation='sigmoid')`: Final layer with a single neuron.
+   - **Activation**: Sigmoid function, which outputs a probability between 0 and 1 for binary classification.
+   - **Output shape**: `(None, 1)`.
+
+## Compilation
+The model is compiled with:
+- **Optimizer**: `adam` - adaptive learning rate optimization algorithm, efficient and widely used for training deep learning models.
+- **Loss Function**: `binary_crossentropy` - suitable for binary classification problems.
+- **Metrics**: `accuracy` - to monitor the accuracy during training and evaluation.
+
+This architecture is effective for extracting spatial features through convolutional layers, reducing dimensions through pooling layers, and learning complex relationships through dense layers. The use of a sigmoid activation in the output layer makes it suitable for tasks such as classifying whether an image belongs to one category or another.
+
 
 ## Model Summary
 
