@@ -127,7 +127,8 @@ To train the model, open the Jupyter notebook and run all the cells:
   - Build the CNN model
   - Train the model using the PKLot dataset
 
-![Senza titolo](https://github.com/user-attachments/assets/20618aaf-8d83-493c-83fb-e44b549d2b71)
+![Senza titolo](https://github.com/user-attachments/assets/c402aa84-1a84-44bd-85f0-35ac4627988a)
+
 
 
 ## Evaluating the Model
