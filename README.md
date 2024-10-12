@@ -153,19 +153,7 @@ This architecture is effective for extracting spatial features through convoluti
 **Non-trainable params:** 0 (0.00 B)
 ## Training the Model
 
-To train the model, open the Jupyter notebook and run all the cells:
-
-1) Ensure that you have Jupyter installed. If not, install it using:
-
-   ```bash
-   pip install jupyter
-   ```
-2) Open the Jupyter notebook:
-   
-   ```bash
-   jupyter notebook parking-occupancy-detection_cnn.ipynb
-   ```
-3) Run all the cells to:
+Run all the cells to:
 
   - Preprocess the dataset
   - Build the CNN model
@@ -183,7 +171,6 @@ After training, you can evaluate the model on the test set using:
   results = model.evaluate(test_dataset)
   print(f"Test Loss: {results[0]}, Test Accuracy: {results[1]}")
   ```
-(Already in parking-occupancy-detection_cnn.ipynb code)
 
 ## Confusion Matrix 
 
